@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" Version="11.0.50727.1" />
+    <PackageReference Include="MySql.Data.Entity" Version="6.10.8" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.16" />
+    <PackageReference Include="MySql.Data" Version="8.0.16" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="Humanizer" Version="2.6.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    <!-- <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" /> -->
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="75.0.3770.140" />
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" /> -->
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Core" Version="2.2.0" /> -->
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Https" Version="2.2.0" /> -->
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="Moq" Version="4.12.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\GeoJSON\" />
+    <Folder Include="wwwroot\JSON\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\images\DSC_713.JPG" />
+    <Content Remove="wwwroot\GeoJSON\Datazone_coordinates_2016.json" />
+    <Content Remove="wwwroot\GeoJSON\Datazones.geojson" />
+    <Content Remove="wwwroot\GeoJSON\abcity_wards.geojson" />
+    <Content Remove="wwwroot\GeoJSON\abcity_wards.json" />
+    <Content Remove="wwwroot\GeoJSON\wards.json" />
+    <Content Remove="wwwroot\GeoJSON\wards.geojson" />
+    <Content Remove="wwwroot\GeoJSON\wards.json" />
+    <Content Remove="wwwroot\js\jquery.min.js" />
+    <Content Remove="wwwroot\js\leaflet.ajax.min.js" />
+    <Content Remove="abdndata.Tests\obj\project.assets.json" />
+    <Content Remove="abdndata.Tests\obj\project.assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\images\DZicon.png" />
+    <None Remove="Content\images\DZshadow.png" />
+  </ItemGroup>
+</Project>
